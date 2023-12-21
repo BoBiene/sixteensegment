@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="jquery-1.9.1.min.js"></script>
-    <script src="segment.min.js"></script>
+    <script src="./src/ElementArray.js"></script> 
+    <script src="./src/SegmentCanvas.js"></script> 
+    <script src="./src/SevenSegment.js"></script> 
+    <script src="./src/SixteenSegment.js"></script> 
+    <!-- <script src="segment.min.js"></script> -->
     <script>
         var settings = {
             X : 0,
@@ -24,7 +28,7 @@
             StrokeWidth : 0
         };
 
-        window.onload = function () {
+        window.onload = function () { 
             "use strict";
             // Set the canvas size to fill its container
             var canvas = document.getElementById('c');
@@ -40,8 +44,8 @@
             $("input").change(function() { update(segment); });
 
             // Initialize the segment settings and input controls
-            settings.Width = canvas.width;
-            settings.Height = canvas.height;
+            settings.Width = segment.Width;
+            settings.Height = segment.Height;
             for (var s in settings){ 
                 segment[s] = settings[s];
             }

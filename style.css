@@ -25,12 +25,13 @@ body
 {
     font-size: 95px;
     width: 6em;
-    height: 1.6em;
+    height: 5em;
+    background-color: #888;
 }
 
 canvas
 {
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 fieldset
